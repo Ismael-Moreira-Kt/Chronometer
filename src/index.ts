@@ -21,4 +21,7 @@ rl.question('Enter the countdown time in seconds: ', (input) => {
         const chronometer = new Chronometer(timeInSeconds);
         chronometer.start();
     }
+
+
+    rl.close();
 });
