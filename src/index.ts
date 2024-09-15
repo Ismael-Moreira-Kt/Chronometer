@@ -17,4 +17,8 @@ rl.question('Enter the countdown time in seconds: ', (input) => {
     if (isNaN(timeInSeconds) || timeInSeconds <= 0) {
       console.log('Please enter a valid number.');
     }
+    else {
+        const chronometer = new Chronometer(timeInSeconds);
+        chronometer.start();
+    }
 });
