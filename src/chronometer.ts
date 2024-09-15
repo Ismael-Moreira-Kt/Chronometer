@@ -23,5 +23,14 @@ export class Chronometer {
                 console.log(`Remaining time: ${this.remainingTime} seconds`);
             }
         }, 1000);
+    }
+
+
+    stop(): void {
+        if (this.intervalId) {
+            clearInterval(this.intervalId);
+
+            this.intervalId = null;
+        }
     }    
 }
