@@ -11,4 +11,10 @@ const rl = readline.createInterface({
 
 
 rl.question('Enter the countdown time in seconds: ', (input) => {
+    const timeInSeconds = parseInt(input);
+
+
+    if (isNaN(timeInSeconds) || timeInSeconds <= 0) {
+      console.log('Please enter a valid number.');
+    }
 });
